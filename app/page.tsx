@@ -19,8 +19,8 @@ export default function Home() {
         </div>
 
         <p className="foundry-status">
-          <span aria-hidden="true" />
-          THE FOUNDRY IS ACTIVE.
+          <span className="status-dot" aria-hidden="true" />
+          <span className="status-text">THE FOUNDRY IS ACTIVE.</span>
         </p>
       </header>
 
