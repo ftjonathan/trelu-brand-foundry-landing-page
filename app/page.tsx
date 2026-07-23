@@ -1,4 +1,9 @@
 export default function Home() {
+  const basePath =
+    process.env.NODE_ENV === "production"
+      ? "/trelu-brand-foundry-landing-page"
+      : "";
+
   return (
     <main className="site">
       <header className="header">
@@ -6,7 +11,7 @@ export default function Home() {
           {/* The original transparent brand asset is intentionally served directly. */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/trelu-brand-foundry-logo.png"
+            src={`${basePath}/trelu-brand-foundry-logo.png`}
             alt="Trelu Brand Foundry"
             width="3300"
             height="1582"
